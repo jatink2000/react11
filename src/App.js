@@ -9,6 +9,7 @@ import { Propscomp } from './components/Propscomponent';
 import myimage from "./images/image1.avif"
 import { Localstorage } from './components/Localstorage';
 import { Studentsdata } from './components/Studentsdata';
+import { Usestatecomponent } from './components/Usestatecomponent';
 
 function App() {
   return (
@@ -24,6 +25,8 @@ function App() {
           <Link to={"/Propscomp"}>Propscomp component</Link>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           <Link to={"/Localstorage"}>Localstorage component</Link>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           <Link to={"/Studentsdata"}>Studentsdata component</Link>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <Link to={"/Usestatecomponent"}>Usestate component</Link>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
 
 
 
@@ -35,6 +38,7 @@ function App() {
             <Route path='/Propscomp' element={<Propscomp myname="groot academy" mysecondname="groot software" image={myimage}/>}/>
             <Route path='/Localstorage' element={<Localstorage/>}/>
             <Route path='/Studentsdata' element={<Studentsdata/>}/>
+            <Route path='/Usestatecomponent' element={<Usestatecomponent/>}/>
 
 
 
