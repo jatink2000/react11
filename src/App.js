@@ -10,6 +10,9 @@ import myimage from "./images/image1.avif"
 import { Localstorage } from './components/Localstorage';
 import { Studentsdata } from './components/Studentsdata';
 import { Usestatecomponent } from './components/Usestatecomponent';
+import Ourproducts from './components/Ourproducts';
+import Cartpage from './components/Cartpage';
+import Inputstate from './components/Inputstate';
 
 function App() {
   return (
@@ -26,8 +29,9 @@ function App() {
           <Link to={"/Localstorage"}>Localstorage component</Link>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           <Link to={"/Studentsdata"}>Studentsdata component</Link>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           <Link to={"/Usestatecomponent"}>Usestate component</Link>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-
-
+          <Link to={"/Ourproducts"}>Ourproducts component</Link>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <Link to={"/Cartpage"}>Cartpage component</Link>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <Link to={"/Inputstate"}>Inputstate component</Link>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
 
 
@@ -39,6 +43,9 @@ function App() {
             <Route path='/Localstorage' element={<Localstorage/>}/>
             <Route path='/Studentsdata' element={<Studentsdata/>}/>
             <Route path='/Usestatecomponent' element={<Usestatecomponent/>}/>
+            <Route path='/Ourproducts' element={<Ourproducts/>}/>
+            <Route path='/Cartpage' element={<Cartpage/>}/>
+            <Route path='/Inputstate' element={<Inputstate/>}/>
 
 
 
