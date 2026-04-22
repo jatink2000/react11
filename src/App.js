@@ -13,6 +13,7 @@ import { Usestatecomponent } from './components/Usestatecomponent';
 import Ourproducts from './components/Ourproducts';
 import Cartpage from './components/Cartpage';
 import Inputstate from './components/Inputstate';
+import { Multipleinput } from './components/Multipleinput';
 
 function App() {
   return (
@@ -32,7 +33,7 @@ function App() {
           <Link to={"/Ourproducts"}>Ourproducts component</Link>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           <Link to={"/Cartpage"}>Cartpage component</Link>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           <Link to={"/Inputstate"}>Inputstate component</Link>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-
+          <Link to={"/Multipleinput"}>Multipleinput component</Link>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
 
           <Routes>
@@ -46,8 +47,7 @@ function App() {
             <Route path='/Ourproducts' element={<Ourproducts/>}/>
             <Route path='/Cartpage' element={<Cartpage/>}/>
             <Route path='/Inputstate' element={<Inputstate/>}/>
-
-
+            <Route path='/Multipleinput' element={<Multipleinput/>}/>
 
           </Routes>
         </BrowserRouter>
