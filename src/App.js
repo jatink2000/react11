@@ -14,6 +14,7 @@ import Ourproducts from './components/Ourproducts';
 import Cartpage from './components/Cartpage';
 import Inputstate from './components/Inputstate';
 import { Multipleinput } from './components/Multipleinput';
+import UseEffect from './components/UseEffect';
 
 function App() {
   return (
@@ -34,6 +35,8 @@ function App() {
           <Link to={"/Cartpage"}>Cartpage component</Link>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           <Link to={"/Inputstate"}>Inputstate component</Link>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           <Link to={"/Multipleinput"}>Multipleinput component</Link>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <Link to={"/UseEffect"}>UseEffect component</Link>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
 
 
           <Routes>
@@ -48,6 +51,7 @@ function App() {
             <Route path='/Cartpage' element={<Cartpage/>}/>
             <Route path='/Inputstate' element={<Inputstate/>}/>
             <Route path='/Multipleinput' element={<Multipleinput/>}/>
+            <Route path='/UseEffect' element={<UseEffect/>}/>
 
           </Routes>
         </BrowserRouter>
