@@ -16,6 +16,7 @@ import Inputstate from './components/Inputstate';
 import { Multipleinput } from './components/Multipleinput';
 import UseEffect from './components/UseEffect';
 import Component1 from './components/context/Component1';
+import { Usenavigate } from './components/Usenavigate';
 
 function App() {
   return (
@@ -38,6 +39,7 @@ function App() {
           <Link to={"/Multipleinput"}>Multipleinput component</Link>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           <Link to={"/UseEffect"}>UseEffect component</Link>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           <Link to={"/Component1"}>Component1 component</Link>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <Link to={"/Usenavigate"}>Usenavigate component</Link>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
           <Routes>
             <Route path='/' element={<Home/>}/>
@@ -53,6 +55,7 @@ function App() {
             <Route path='/Multipleinput' element={<Multipleinput/>}/>
             <Route path='/UseEffect' element={<UseEffect/>}/>
             <Route path='/Component1' element={<Component1/>}/>
+            <Route path='/Usenavigate' element={<Usenavigate/>}/>
 
 
           </Routes>
