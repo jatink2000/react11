@@ -17,13 +17,13 @@ import { Multipleinput } from './components/Multipleinput';
 import UseEffect from './components/UseEffect';
 import Component1 from './components/context/Component1';
 import { Usenavigate } from './components/Usenavigate';
+import Uselocation from './components/Uselocation';
+import ProductDetailsPage from './components/Productdetails';
 
 function App() {
   return (
       <>
-
         {/* routing : npm i react-router-dom  */}
-
 
         <BrowserRouter>
           <Link to={"/"}>Home component</Link> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -40,7 +40,7 @@ function App() {
           <Link to={"/UseEffect"}>UseEffect component</Link>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           <Link to={"/Component1"}>Component1 component</Link>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           <Link to={"/Usenavigate"}>Usenavigate component</Link>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-
+          <Link to={"/Uselocation"}>Uselocation component</Link>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           <Routes>
             <Route path='/' element={<Home/>}/>
             <Route path='/mystyle' element={<Stylepage/>}/>
@@ -56,8 +56,8 @@ function App() {
             <Route path='/UseEffect' element={<UseEffect/>}/>
             <Route path='/Component1' element={<Component1/>}/>
             <Route path='/Usenavigate' element={<Usenavigate/>}/>
-
-
+            <Route path='/Uselocation' element={<Uselocation/>}/>
+            <Route path='/ProductDetailsPage' element={<ProductDetailsPage/>}/>
           </Routes>
         </BrowserRouter>
 

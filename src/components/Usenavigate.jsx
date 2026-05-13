@@ -12,7 +12,7 @@ function Usenavigate(){
 
     let productbtn=()=>{
        if(emailvalue=="admin@gmail.com"){
-            go("/Ourproducts",{state:"groot"})
+            go("/Uselocation",{state:emailvalue})
        }
        else{
         alert("email invalid")
