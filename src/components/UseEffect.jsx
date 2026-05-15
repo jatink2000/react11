@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { useNavigate } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 
 export default function UseEffect() {
     let [myname, setname] = useState("groot")
@@ -26,9 +26,9 @@ export default function UseEffect() {
     }, []) // 
 
 
-    let go=useNavigate()
-    let produtdetails=(itemdata)=>{
-        go("/ProductDetailsPage",{state:itemdata})
+    let go = useNavigate()
+    let produtdetails = (itemdata) => {
+        go("/ProductDetailsPage", { state: itemdata })
     }
 
     return (
@@ -41,15 +41,22 @@ export default function UseEffect() {
             {city.map((item) => {
                 return (
                     <>
-                        <div className='box1' onClick={()=>produtdetails(item)}>
+                        {/* <div className='box1' onClick={()=>produtdetails(item)}>
                             <img src={item.thumbnail} />
 
-                        </div>
+                        </div> */}
+
+
+                        <Link to={`/ProductDetailsPage2/${encodeURIComponent(JSON.stringify(item))}`}>
+                            <div className='box1'>
+                                <img src={item.thumbnail} />
+                            </div>
+                        </Link>
                     </>
                 )
             })}
 
-            
+
 
             {/* <p>Useeffect hook : the useeffect hook is allow us to side effect in your funtion component. some example of side effect is : updating data , fetching data etc . 
             the useEffect accept two parameter first is function and second is dependency list . </p>

@@ -19,6 +19,8 @@ import Component1 from './components/context/Component1';
 import { Usenavigate } from './components/Usenavigate';
 import Uselocation from './components/Uselocation';
 import ProductDetailsPage from './components/Productdetails';
+import Useparams from './components/Useparams';
+import ProductDetailsPage2 from './components/Productdetails2';
 
 function App() {
   return (
@@ -41,6 +43,8 @@ function App() {
           <Link to={"/Component1"}>Component1 component</Link>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           <Link to={"/Usenavigate"}>Usenavigate component</Link>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           <Link to={"/Uselocation"}>Uselocation component</Link>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <Link to={"/Useparams/groot academy/jaipur"}>Useparams component</Link>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
           <Routes>
             <Route path='/' element={<Home/>}/>
             <Route path='/mystyle' element={<Stylepage/>}/>
@@ -58,6 +62,9 @@ function App() {
             <Route path='/Usenavigate' element={<Usenavigate/>}/>
             <Route path='/Uselocation' element={<Uselocation/>}/>
             <Route path='/ProductDetailsPage' element={<ProductDetailsPage/>}/>
+            <Route path='/Useparams/:myname/:mycity' element={<Useparams/>}/>
+            <Route path='/ProductDetailsPage2/:productdata' element={<ProductDetailsPage2/>}/>
+
           </Routes>
         </BrowserRouter>
 
