@@ -21,6 +21,7 @@ import Uselocation from './components/Uselocation';
 import ProductDetailsPage from './components/Productdetails';
 import Useparams from './components/Useparams';
 import ProductDetailsPage2 from './components/Productdetails2';
+import { Homeclass } from './components/Homeclass';
 
 function App() {
   return (
@@ -44,6 +45,8 @@ function App() {
           <Link to={"/Usenavigate"}>Usenavigate component</Link>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           <Link to={"/Uselocation"}>Uselocation component</Link>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           <Link to={"/Useparams/groot academy/jaipur"}>Useparams component</Link>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <Link to={"/Homeclass"}>Homeclass component</Link>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
 
           <Routes>
             <Route path='/' element={<Home/>}/>
@@ -64,6 +67,7 @@ function App() {
             <Route path='/ProductDetailsPage' element={<ProductDetailsPage/>}/>
             <Route path='/Useparams/:myname/:mycity' element={<Useparams/>}/>
             <Route path='/ProductDetailsPage2/:productdata' element={<ProductDetailsPage2/>}/>
+            <Route path='/Homeclass' element={<Homeclass/>}/>
 
           </Routes>
         </BrowserRouter>
