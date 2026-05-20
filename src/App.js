@@ -22,8 +22,19 @@ import ProductDetailsPage from './components/Productdetails';
 import Useparams from './components/Useparams';
 import ProductDetailsPage2 from './components/Productdetails2';
 import { Homeclass } from './components/Homeclass';
+import Propsclass from './components/Propsclass';
+import Stateclass from './components/Stateclass';
 
 function App() {
+  let mydata={
+    myname:"groot academy", 
+    mycity:"alwar", 
+    course:"Frountend", 
+    email:"groot@gmail.com" 
+  }
+
+  let studentsname=["ravi","nirmal","rohit","ankit"]
+
   return (
       <>
         {/* routing : npm i react-router-dom  */}
@@ -46,7 +57,8 @@ function App() {
           <Link to={"/Uselocation"}>Uselocation component</Link>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           <Link to={"/Useparams/groot academy/jaipur"}>Useparams component</Link>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           <Link to={"/Homeclass"}>Homeclass component</Link>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-
+          <Link to={"/Propsclass"}>Propsclass component</Link>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <Link to={"/Stateclass"}>Stateclass component</Link>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
           <Routes>
             <Route path='/' element={<Home/>}/>
@@ -68,6 +80,10 @@ function App() {
             <Route path='/Useparams/:myname/:mycity' element={<Useparams/>}/>
             <Route path='/ProductDetailsPage2/:productdata' element={<ProductDetailsPage2/>}/>
             <Route path='/Homeclass' element={<Homeclass/>}/>
+            <Route path='/Propsclass' element={<Propsclass details={mydata} allstudents={studentsname}/>}/>
+            <Route path='/Stateclass' element={<Stateclass/>}/>
+
+
 
           </Routes>
         </BrowserRouter>
